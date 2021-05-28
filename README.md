@@ -1,4 +1,5 @@
-# Udacity-Machine-Learning-Capstone-project
+# Machine Learning Capstone project
+
 Capstone projetc for the Udacity's Machine Learning Nanodegree
 
 Project sections:
@@ -12,40 +13,14 @@ Project sections:
 
 ## Problem understanding
 
-Build a plagiarism detector that examines a text file and performs binary classification; labeling that file as either plagiarized or not, depending on how similar the text file is to a provided source text.
+Build a Dog Breeds Classifier using Transfer Learning and Pytorch deep learning framework.
 
 
 ## Pytorch Model Architecture
 
+
 ![Pytorch model](https://github.com/Fer-Bonilla/Udacity-Machine-Learning-plagiarism-detection-model/blob/main/notebook_ims/network_architecture.png)
 
-## Project structure
-
-The project structure is based on the Udacity's project template:
-
-  ```
-  + data                        + ¨g*.*                   Files with the text data 
-                                +  file_information.csv   File with filename, task and category fields 
-
-  + 1_Data_Exploration.ipynb                              Notebook with Data exploration
-
-  + 2_Plagiarism_Feature_Engineering.ipynb                Notebook for data loading and transformation
-
-  + 3_Training_a_Model.ipynb                              Notebook for training and deployment scripts
-
-  + source_pytorch              + model.py                Pytorch Binary classification implementation
-                                + predict.py              Python prediction implementation
-                                + train.py                Train function implementation
-
-  + plagiarism_data             + train.csv               Features selected for training
-                                + test.py                 Features selected for test                                                       
-
-  + notebook_ims                + *.png                   Images used in Notebooks
-
-  + helpers.py                                            Helpers functions  required for execution
-
-  + problem_unittests.py                                  Testing scripts
-  ```
 
 ## Implementation
 

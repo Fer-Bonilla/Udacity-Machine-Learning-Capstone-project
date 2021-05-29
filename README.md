@@ -13,10 +13,36 @@ Project sections:
 
 ## Problem understanding
 
-Build a Dog Breeds Classifier using Transfer Learning and Pytorch deep learning framework.
+Build a Dog Breeds Classifier using Transfer Learning and Pytorch deep learning framework. To develop the project different models are defineda and tested. Some models were built from scrach and other models uses pretrained models availables in the torchvision.models library-
 
 
-## Pytorch Model Architecture
+## Datasets 
+
+Dataset used for training and testing are 
+
+dog dataset: 
+human_dataset:
+
+Datasets ara avaible for donwload from:
+
+
+
+
+
+## Pytorch Models Architecture
+
+Test model
+
+Models built
+
+Base model (Small)
+
+Medium model
+
+Big model
+
+
+Transfer Learning Model:
 
 
 ![Pytorch model](https://github.com/Fer-Bonilla/Udacity-Machine-Learning-plagiarism-detection-model/blob/main/notebook_ims/network_architecture.png)

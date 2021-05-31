@@ -16,6 +16,17 @@ Project sections:
 
 The project goal is to build a Dog Breeds Classifier app that uses an image classification deep learning model to perform the Dog breed identification. To achieve this goal is necessary review different models based on CNN architectures (Convolutional Neuronal Networks) mainly. The project development includes to try models built from scratch and model using transfer learning approach on pretrained image classification architectures. The main tool used to develop the project is Pytorch and the models available in the torchvision.models library. 
 
+## Project requirements
+
+Project start with a data exploration to review the image data organization and classes defined. Data formats need to be transformed to fit the pretrained model’s requirements building data loaders function that process de images and add data augmentation to improve the training process. Different libraries and frameworks are suggested to use for the task required in the app. Face detection, Dog’s detection, and Dog Breed detection. The app to be developed must me perform these tasks:
+
+ •	If a dog is detected in the image, return the predicted breed.
+ •	If a human is detected in the image, return the resembling dog breed.
+ •	If neither is detected in the image, provide output that indicates an error.
+
+Some models are suggested by the Udacity Team, but other models will be considered and tested to achieve best app performance.
+
+
 
 ## Data used
 

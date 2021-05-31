@@ -5,6 +5,7 @@ Capstone projetc for the Udacity's Machine Learning Nanodegree
 Project sections:
 
 - Problem understanding
+- Data used
 - Pytorch Model Architecture
 - Implementation
 - Project structure
@@ -13,10 +14,10 @@ Project sections:
 
 ## Problem understanding
 
-Build a Dog Breeds Classifier using Transfer Learning and Pytorch deep learning framework. To develop the project different models are defineda and tested. Some models were built from scrach and other models uses pretrained models availables in the torchvision.models library-
+The project goal is to build a Dog Breeds Classifier app that uses an image classification deep learning model to perform the Dog breed identification. To achieve this goal is necessary review different models based on CNN architectures (Convolutional Neuronal Networks) mainly. The project development includes to try models built from scratch and model using transfer learning approach on pretrained image classification architectures. The main tool used to develop the project is Pytorch and the models available in the torchvision.models library. 
 
 
-## Datasets 
+## Data used
 
 Dataset used for training and testing are 
 

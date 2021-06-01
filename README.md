@@ -65,18 +65,11 @@ Models built
 | BatchNorm1d-9                                                    | [-1, 133]          |       266 |
 
 
-Total params: 910,437
-Trainable params: 910,437
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.57
-Forward/backward pass size (MB): 4.39
-Params size (MB): 3.47
-Estimated Total Size (MB): 8.44
-----------------------------------------------------------------
+ - Total params: 910,437
+ - Trainable params: 910,437
+ - Non-trainable params: 0
 
 ### Medium size model
-
 
 | Layer (type)                                                     | Output Shape        | Param #   |
 |------------------------------------------------------------------|:--------------------|:----------|
@@ -100,15 +93,9 @@ Estimated Total Size (MB): 8.44
 | BatchNorm1d-18                                                   | [-1, 133]           | 266       |
 
 
-Total params: 1,714,355
-Trainable params: 1,714,355
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.57
-Forward/backward pass size (MB): 32.15
-Params size (MB): 6.54
-Estimated Total Size (MB): 39.27
-----------------------------------------------------------------
+ - Total params: 1,714,355
+ - Trainable params: 1,714,355
+ - Non-trainable params: 0
 
 ### Big size model
 
@@ -138,15 +125,9 @@ Estimated Total Size (MB): 39.27
 | BatchNorm1d-22                                                   | [-1, 133]           | 266       |
  
  
-Total params: 3,087,023
-Trainable params: 3,087,023
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.57
-Forward/backward pass size (MB): 292.26
-Params size (MB): 11.78
-Estimated Total Size (MB): 304.61
-----------------------------------------------------------------
+ - Total params: 3,087,023
+ - Trainable params: 3,087,023
+ - Non-trainable params: 0
 
 ### Results
 

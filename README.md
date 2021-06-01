@@ -263,5 +263,13 @@ Accuracy
   2. Execute 3_Training_a_Model.ipynb script to train and deploy the model
   3. Delete all the resources from Sagemaker
 
+
+## Possible improvements
+
+ - As was reviewed before, state-of-the-art models offer higher accuracy for the image classification tasks, can also provide better performance for the transfer learning task. These models require more resources for the training process.
+ - Aditional optimizations can be used to improve performance, like hyperparameter tuning and network pruning to accelerate inference time response.
+ - Increasing data with more sources using web scrapping and data augmentation using GAN networks to enrich the training process can provide better input for the training and validation process.
+ - New models based on a generative approach can be used to improve the transfer learning process.
+
 ## Author 
 Fernando Bonilla [linkedin](https://www.linkedin.com/in/fer-bonilla/)

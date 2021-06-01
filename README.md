@@ -140,7 +140,13 @@ Models built
 
 
 
-Transfer Learning Model:
+## Transfer Learning Model:
+resnet152
+
+- Total params: 59,261,125
+ - Trainable params: 59,261,125
+ - Non-trainable params: 0
+
 
 
 ![Pytorch model](https://github.com/Fer-Bonilla/Udacity-Machine-Learning-plagiarism-detection-model/blob/main/notebook_ims/network_architecture.png)

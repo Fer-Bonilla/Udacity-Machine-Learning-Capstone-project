@@ -64,7 +64,7 @@ Models built
 | Linear-8                                                         | [-1, 133]          |   208,677 |
 | BatchNorm1d-9                                                    | [-1, 133]          |       266 |
 
-================================================================
+
 Total params: 910,437
 Trainable params: 910,437
 Non-trainable params: 0
@@ -99,7 +99,7 @@ Estimated Total Size (MB): 8.44
 | Linear-17                                                        | [-1, 133]           | 50,939    |
 | BatchNorm1d-18                                                   | [-1, 133]           | 266       |
 
-================================================================
+
 Total params: 1,714,355
 Trainable params: 1,714,355
 Non-trainable params: 0
@@ -137,11 +137,7 @@ Estimated Total Size (MB): 39.27
 | Linear-21                                                        | [-1, 133]           | 52,269    |
 | BatchNorm1d-22                                                   | [-1, 133]           | 266       |
  
- ===============================================================
  
- - Total params: 3,087,023
- - Trainable params: 3,087,023
- - Non-trainable params: 0
 Total params: 3,087,023
 Trainable params: 3,087,023
 Non-trainable params: 0

@@ -149,83 +149,13 @@ resnet152
 
 
 
-![Pytorch model](https://github.com/Fer-Bonilla/Udacity-Machine-Learning-plagiarism-detection-model/blob/main/notebook_ims/network_architecture.png)
+![Pytorch model](https://github.com/Fer-Bonilla/Udacity-Machine-Learning-Capstone-project/blob/main/resnet152.png)
 
 
 ## Implementation
 
 **Pytorch BinaryClassifier Model**
 
-  ```Python
-import torch
-import torch.nn.functional as F
-import torch.nn as nn
-
-## TODO: Complete this classifier
-class BinaryClassifier(nn.Module):
-    """
-    Define a neural network that performs binary classification.
-    The network should accept your number of features as input, and produce 
-    a single sigmoid value, that can be rounded to a label: 0 or 1, as output.
-    
-    Notes on training:
-    To train a binary classifier in PyTorch, use BCELoss.
-    BCELoss is binary cross entropy loss, documentation: https://pytorch.org/docs/stable/nn.html#torch.nn.BCELoss
-    """
-
-    ## TODO: Define the init function, the input params are required (for loading code in train.py to work)
-    def __init__(self, input_features, hidden_dim, output_dim):
-        """
-        Initialize the model by setting up linear layers.
-        Use the input parameters to help define the layers of your model.
-        :param input_features: the number of input features in your training/test data
-        :param hidden_dim: helps define the number of nodes in the hidden layer(s)
-        :param output_dim: the number of outputs you want to produce
-        """
-        super(BinaryClassifier, self).__init__()
-
-        # define any initial layers, here
-        
-        # Add a fully connected layer
-        self.fc1 = nn.Linear(input_features, hidden_dim)
-        
-        # Add a fully connected layer  
-        self.fc2 = nn.Linear(hidden_dim, int(hidden_dim/2))
-        
-        # Add a fully connected layer
-        self.fc3 = nn.Linear(int(hidden_dim/2), output_dim)
-        
-        # Add dropout to avoid overfitting
-        self.drop = nn.Dropout(0.25)
-        
-        # add a  element-wise function sigmoid
-        self.sigmoid = nn.Sigmoid()
-
-    
-    ## TODO: Define the feedforward behavior of the network
-    def forward(self, x):
-        """
-        Perform a forward pass of our model on input features, x.
-        :param x: A batch of input features of size (batch_size, input_features)
-        :return: A single, sigmoid-activated value as output
-        """
-        
-        # define the feedforward behavior
-        
-        # Add a fully connected layer with Relu activation
-        x = torch.relu(self.fc1(x))
-        
-        # Add a dropout to avoid overfitting
-        x = self.drop(x)
-        
-        # Add a fully connected layer with Relu activation function
-        x = torch.relu(self.fc2(x))
-        
-        # Generate single, sigmoid-activated value as output
-        x = torch.sigmoid(self.fc3(x))
-        
-        return x
-  ```
 
 **Pytorch training function**
 
@@ -234,26 +164,15 @@ class BinaryClassifier(nn.Module):
 
 The project structure is based on the Udacity's project template:
 
-Training Loss 
-```
-Epoch: 10, Loss: 0.6487539325441632
-Epoch: 20, Loss: 0.613213564668383
-Epoch: 30, Loss: 0.5324599317141941
-Epoch: 40, Loss: 0.4539638161659241
-Epoch: 50, Loss: 0.3536339061600821
-Epoch: 60, Loss: 0.301504128745624
-Epoch: 70, Loss: 0.28896574676036835
-Epoch: 80, Loss: 0.2756422853895596
-Epoch: 90, Loss: 0.2657772238765444
-Epoch: 100, Loss: 0.22072330649409974
-```
-
 Accuracy
   ```
   1.0
   ```
 
 ## App model
+
+
+
 
 
 

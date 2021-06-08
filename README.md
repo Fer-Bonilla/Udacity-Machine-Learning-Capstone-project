@@ -162,19 +162,54 @@ resnet152
 
 ## Model performance
 
-The project structure is based on the Udacity's project template:
+The model trained using transfer learning with resnet152 pre-trained model achieved around 85% accuracy. I tried with some additional images, for example, two ShihZu images, and the model doesn't work well. and with dogs with mixed bred the model was confused. That means that there is a lot of improvement because 85% accuracy sounds ok but in practice still far from a good performance. Is clear that using a pre-trained model offers a fast and better way to train models for a specific task like dog breed detection. As I suggested when chose the pre-trained model, There more state-of-the-art models with more than 600 million parameters.
 
-Accuracy
-  ```
-  1.0
-  ```
+Model performance:
+
+Test Loss: 0.471680
+Test Accuracy: 86% (723/836)
 
 ## App model
 
+  ```Python 
+  def run_app(img_path):
 
+      '''
+      Define a function to execute inference process to detect faces and fogd bred
+      predicted ImageNet class for image at specified path
 
+      Args:
+          img_path: path to an image
 
+      Returns:
+          Index corresponding to RESNET-120 model's prediction
+      '''    
 
+      ## handle cases for a human face, dog, and neither
+
+      # First look for human face 
+      if face_detector(img_path):
+          print("Face Detected")
+          image = Image.open(img_path)
+          plt.imshow(image)
+          plt.show()
+          print(f"Looks like: \n The {predict_breed_transfer(img_path)}\n")
+
+      # If not face detectec check for dog breed
+      elif dog_detector(img_path):
+          print("Dog Detected")
+          image = Image.open(img_path)
+          plt.imshow(image)
+          plt.show()
+          print(f"Predicted breed:... \n{predict_breed_transfer(img_path)}\n")
+
+      # Not face or dog detected
+      else:
+          print("Couldn't detect dogs or faces.\n")
+          image = Image.open(img_path)
+          plt.imshow(image)
+          plt.show()
+  ```
 
 ## Using the model
 

@@ -30,25 +30,12 @@ Some models are suggested by the Udacity Team, but other models will be consider
 
 ## Data used
 
-Dataset used for training and testing are 
+Dataset used for the training process consist in face images and dog’s images classified by name and dog breed, respectively. There are 13.233 human images and 8.351 dog images. For the Dogs breed classifier, the dog images provided by Udacity are organized by train, test and validation sets as subfolders. There are 133 breeds categories where Border Collie is the most frequent class and Xoloitscuintli the less one. This is the dogs breed dataset class count exploration:
 
-dog dataset: 
-human_dataset:
-
-Datasets ara avaible for donwload from:
-
-
-
+![image](https://user-images.githubusercontent.com/33405407/122277787-1f945680-ce9b-11eb-8473-6df085066843.png)
 
 
 ## Pytorch Models Architecture
-
-Test model
-
-
-
-Models built
-
 
 ### Base model (Small)
 
@@ -151,14 +138,9 @@ resnet152
 ![Pytorch model](https://github.com/Fer-Bonilla/Udacity-Machine-Learning-Capstone-project/blob/main/resnet152.png)
 
 
-## Implementation
+## Transfer Learning model Implementation
 
-**Pytorch BinaryClassifier Model**
-
-
-
-
-**Pytorch training function**
+![image](https://user-images.githubusercontent.com/33405407/122277968-536f7c00-ce9b-11eb-8316-270dbe9e7b3d.png)
 
 
 ## Model performance

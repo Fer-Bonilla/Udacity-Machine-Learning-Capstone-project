@@ -148,13 +148,14 @@ resnet152
  - Non-trainable params: 0
 
 
-
 ![Pytorch model](https://github.com/Fer-Bonilla/Udacity-Machine-Learning-Capstone-project/blob/main/resnet152.png)
 
 
 ## Implementation
 
 **Pytorch BinaryClassifier Model**
+
+
 
 
 **Pytorch training function**
@@ -213,10 +214,8 @@ Test Accuracy: 86% (723/836)
 
 ## Using the model
 
-  1. Execute the 2_Plagiarism_Feature_Engineering.ipynb (Load the data and write into plagirims_data directory to create train and test data)
-  2. Execute 3_Training_a_Model.ipynb script to train and deploy the model
-  3. Delete all the resources from Sagemaker
-
+  1. Execute the eda.ipynb to visualize the Exploratory Data Analysis
+  2. Execute dog_app.ipynb for all the training and testis model.
 
 ## Possible improvements
 

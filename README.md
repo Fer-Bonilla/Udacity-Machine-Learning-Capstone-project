@@ -35,6 +35,33 @@ Dataset used for the training process consist in face images and dog’s images 
 ![image](https://user-images.githubusercontent.com/33405407/122277787-1f945680-ce9b-11eb-8473-6df085066843.png)
 
 
+After calculating the basic statistics from the count data, we get: 
+	Count
+count	133.000000
+mean	62.789474
+std	18.231280
+min	26.000000
+25%	49.000000
+50%	62.000000
+75%	76.000000
+max	111.000000
+
+The mean of count frequency is 62, and there are dogs breeds over 95 samples (over 80% of mean), and some breeds samples with less than 36 samples. This is an imbalance class machine learning problem.
+ 
+ ![image](https://user-images.githubusercontent.com/33405407/122491043-1806a780-cf98-11eb-88a4-40abee8ceab1.png)
+ 
+ ![image](https://user-images.githubusercontent.com/33405407/122491056-1fc64c00-cf98-11eb-97e4-dd5773ff15d1.png)
+
+We need to consider some data transformation to improve the imbalance class. Some of the strategies that can be considered:
+•	Data augmentation to reduce the class imbalance.
+•	Use F1-Score 
+•	Use resampling to improve the class balance
+
+Images are in RGB format and different sizes. These are an images sample:
+
+![image](https://user-images.githubusercontent.com/33405407/122491077-2d7bd180-cf98-11eb-9555-d78877dd7d56.png)
+
+
 ## Pytorch Models Architecture
 
 ### Base model (Small)

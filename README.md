@@ -5,12 +5,14 @@ Capstone projetc for the Udacity's Machine Learning Nanodegree
 Project sections:
 
 - Problem understanding
+- Project requirements
 - Data used
 - Pytorch Model Architecture
-- Implementation
+- Transfer Learning Model
 - Project structure
 - Model performance
 - Using the model
+- Possible improvements
 
 ## Problem understanding
 
@@ -154,8 +156,9 @@ Images are in RGB format and different sizes. These are an images sample:
 
 
 
-## Transfer Learning Model:
-resnet152
+## Transfer Learning Model
+
+Was uset the pretrained model based resnet152
 
 - Total params: 59,261,125
  - Trainable params: 59,261,125
@@ -174,10 +177,10 @@ resnet152
 
 The model trained using transfer learning with resnet152 pre-trained model achieved around 85% accuracy. I tried with some additional images, for example, two ShihZu images, and the model doesn't work well. and with dogs with mixed bred the model was confused. That means that there is a lot of improvement because 85% accuracy sounds ok but in practice still far from a good performance. Is clear that using a pre-trained model offers a fast and better way to train models for a specific task like dog breed detection. As I suggested when chose the pre-trained model, There more state-of-the-art models with more than 600 million parameters.
 
-Model performance:
+## Model performance
 
-Test Loss: 0.471680
-Test Accuracy: 86% (723/836)
+ - Test Loss: 0.471680
+ - Test Accuracy: 86% (723/836)
 
 ## App model
 
